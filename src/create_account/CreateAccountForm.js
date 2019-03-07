@@ -6,9 +6,13 @@ import CreateAccountButton from './CreateAccountButton';
 class CreateAccountForm extends Component {
 	render() {
 		return (
-			<div>
+			<div className="new__account__form">
 				<CreateAccountInput />
 				<CreateAccountButton />
+				<p>
+					Already have an account?
+					<button className="new__account__login--button">Login</button>
+				</p>
 			</div>
 		);
 	}
