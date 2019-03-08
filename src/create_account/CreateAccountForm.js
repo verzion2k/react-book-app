@@ -7,11 +7,16 @@ class CreateAccountForm extends Component {
 	render() {
 		return (
 			<div className="new__account__form">
-				<CreateAccountInput />
+				<div className="new__account__form--inputs">
+					<CreateAccountInput />
+					<CreateAccountInput />
+					<CreateAccountInput />
+				</div>
+
 				<CreateAccountButton />
-				<p>
+				<p className="new__account__form__footer--text">
 					Already have an account?
-					<button className="new__account__login--button">Login</button>
+					<button className="new__account__form__footer--login">Login</button>
 				</p>
 			</div>
 		);

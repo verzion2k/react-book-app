@@ -1,1 +1,51 @@
+.new__account__form {
+	display: flex;
+	justify-content: center;
+	flex-flow: row wrap;
+	&--inputs {
+		display: flex;
+		justify-content: center;
+		flex-flow: row wrap;
+	}
+}
 
+.new__account__form__footer--text {
+	line-height: normal;
+	font-size: 16px;
+	text-align: center;
+	color: #445984;
+	margin: 20px 0;
+}
+
+.new__account__form__footer--login {
+	border: none;
+	line-height: normal;
+	font-size: 16px;
+	font-weight: 700;
+	border-bottom: 1px solid #445984;
+	text-align: center;
+	color: #445984;
+	padding: 0;
+	padding-bottom: 2px;
+	margin-left: 5px;
+	cursor: pointer;
+}
+
+.new__account__form--inputs {
+	margin-bottom: 58px;
+}
+
+.new__account__input--icon {
+	position: relative;
+}
+
+.new__account__input--icon::after {
+	content: "";
+	position: absolute;
+	right: 5%;
+	top: 40%;
+	bottom: 0;
+	width: 23px;
+	height: 12px;
+	background: url(../icons/eye.svg) center / contain no-repeat;
+}

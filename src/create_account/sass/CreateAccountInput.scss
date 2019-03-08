@@ -1,1 +1,43 @@
+$input-bottom-border: linear-gradient(179.24deg, #bafb67 -5.37%, #00d23a 196.64%);
 
+.new__account__input--email {
+	font-size: 14px;
+	font-family: 'Roboto', sans-serif;
+	padding-left: 15px;
+	margin-bottom: 25px;
+	width: 315px;
+	height: 48px;
+	box-shadow: 0px 10px 15px #ddebdc;
+	border-radius: 8px;
+	border: 0;
+	color: rgba(56, 79, 125, 0.65);
+	border-bottom: 3px solid transparent;
+	background-image: $input-bottom-border;
+	background-size: calc(100% + 6px) 3px;
+	background-repeat: no-repeat;
+	background-origin: border-box;
+	background-position: left bottom;
+	box-sizing: border-box !important;
+}
+
+.new__account__input--email::placeholder {
+	color: rgba(56, 79, 125, 0.65);
+}
+
+.new__account__input--email:focus {
+	outline: 0;
+	background-image: linear-gradient(357.82deg, #445984 -14.04%, rgba(68, 89, 132, 0.4) 62.94%);
+	border-radius: 0px 0px 8px 8px;
+}
+
+.new__account__input--label {
+	display: block;
+	line-height: normal;
+	font-size: 12px;
+	font-weight: 700;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	font-family: 'Roboto', sans-serif;
+	color: rgba(68, 89, 132, 0.3);
+	padding-bottom: 6px;
+}
