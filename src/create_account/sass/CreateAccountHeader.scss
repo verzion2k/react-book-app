@@ -1,4 +1,8 @@
 .new__account__header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column wrap;
 	text-align: center;
 }
 

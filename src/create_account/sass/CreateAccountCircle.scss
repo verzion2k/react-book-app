@@ -1,15 +1,35 @@
-.new__account--circle {
-	display: flex;
-	width: 136px;
-	text-align: center;
-	margin: 67px auto 25px;
-	height: 136px;
-	background: linear-gradient(147.47deg, #feb665 24.48%, #f66eb4 118.65%);
-	border-radius: 100%;
-	align-items: center;
-	justify-content: center;
+.new__account__circles {
+	position: relative;
 }
 
-.new__account--circle::after {
+.new__account__circle {
+	position: relative;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 136px;
+	height: 136px;
+	margin: 67px auto 25px;
+	background: linear-gradient(147.47deg, #feb665 24.48%, #f66eb4 118.65%);
+	border-radius: 100%;
+}
+
+.new__account__circle::after {
 	content: url(../icons/lamp.svg);
+}
+
+.new__account__circle--absolute {
+	position: absolute;
+	top: -60%;
+	left: -135%;
+	width: 299px;
+	height: 299px;
+	background: linear-gradient(
+		315deg,
+		rgba(255, 255, 255, 0.61) 3.5%,
+		rgba(121, 171, 252, 0.61) 93.61%,
+		rgba(96, 108, 255, 0.61) 147.83%
+	);
+	border-radius: 100%;
 }
