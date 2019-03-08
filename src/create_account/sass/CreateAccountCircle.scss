@@ -1,7 +1,3 @@
-.new__account__circles {
-	position: relative;
-}
-
 .new__account__circle {
 	position: relative;
 	z-index: 1;
@@ -21,8 +17,8 @@
 
 .new__account__circle__absolute--big {
 	position: absolute;
-	top: -60%;
-	left: -135%;
+	left: -57px;
+	top: -139px;
 	width: 299px;
 	height: 299px;
 	background: linear-gradient(
@@ -36,8 +32,10 @@
 
 .new__account__circle__absolute--small {
 	position: absolute;
-	top: 150%;
-	left: 130%;
+	left: 78.13%;
+	right: 7.03%;
+	top: 43.62%;
+	bottom: 49.53%;
 	width: 55.65px;
 	height: 55.65px;
 	background: linear-gradient(228.76deg, #2deef9 -34.42%, #e084f1 127.18%);
