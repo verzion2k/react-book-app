@@ -19,7 +19,7 @@
 	content: url(../icons/lamp.svg);
 }
 
-.new__account__circle--absolute {
+.new__account__circle__absolute--big {
 	position: absolute;
 	top: -60%;
 	left: -135%;
@@ -31,5 +31,15 @@
 		rgba(121, 171, 252, 0.61) 93.61%,
 		rgba(96, 108, 255, 0.61) 147.83%
 	);
+	border-radius: 100%;
+}
+
+.new__account__circle__absolute--small {
+	position: absolute;
+	top: 150%;
+	left: 130%;
+	width: 55.65px;
+	height: 55.65px;
+	background: linear-gradient(228.76deg, #2deef9 -34.42%, #e084f1 127.18%);
 	border-radius: 100%;
 }
