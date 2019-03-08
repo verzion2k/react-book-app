@@ -3,7 +3,7 @@ import './sass/CreateAccountCircle.scss';
 
 class CreateAccountCircle extends Component {
 	render() {
-		return <div>I AM A CIRCLE</div>;
+		return <div className="new__account--circle" />;
 	}
 }
 

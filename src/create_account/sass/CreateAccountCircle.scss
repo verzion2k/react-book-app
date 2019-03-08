@@ -1,1 +1,15 @@
+.new__account--circle {
+	display: flex;
+	width: 136px;
+	text-align: center;
+	margin: 67px auto 25px;
+	height: 136px;
+	background: linear-gradient(147.47deg, #feb665 24.48%, #f66eb4 118.65%);
+	border-radius: 100%;
+	align-items: center;
+	justify-content: center;
+}
 
+.new__account--circle::after {
+	content: url(../icons/lamp.svg);
+}
