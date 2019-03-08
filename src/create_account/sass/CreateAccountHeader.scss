@@ -1,1 +1,19 @@
+.new__account__header {
+	text-align: center;
+}
 
+.new__account__header--title {
+	line-height: normal;
+	font-size: 32px;
+	color: #384f7d;
+	margin: 0;
+}
+
+.new__account__header--desc {
+	line-height: 22px;
+	font-size: 14px;
+	padding: 12px 20px 32px 20px;
+	margin: 0;
+	font-weight: 400;
+	color: rgba(56, 79, 125, 0.8);
+}
