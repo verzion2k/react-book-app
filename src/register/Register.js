@@ -3,7 +3,7 @@ import './sass/Register.scss';
 import RegisterHeader from './RegisterHeader';
 import RegisterForm from './RegisterForm';
 
-class Register extends Component {
+export default class Register extends Component {
 	render() {
 		return (
 			<div className="register">
@@ -27,5 +27,3 @@ class Register extends Component {
 		);
 	}
 }
-
-export default Register;

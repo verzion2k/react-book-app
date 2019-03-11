@@ -4,7 +4,7 @@ import Portal from '../components/Portal';
 import '../components/sass/Portal.scss';
 import './sass/LoginPortal.scss';
 
-class LoginHeader extends Component {
+export default class LoginHeader extends Component {
 	render() {
 		const { loginPortalXs, loginPortalS, loginPortalLg } = this.props;
 		return (
@@ -19,5 +19,3 @@ class LoginHeader extends Component {
 		);
 	}
 }
-
-export default LoginHeader;

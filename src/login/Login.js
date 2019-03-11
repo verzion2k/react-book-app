@@ -3,7 +3,7 @@ import './sass/Login.scss';
 import LoginHeader from './LoginHeader';
 import LoginForm from './LoginForm';
 
-class Login extends Component {
+export default class Login extends Component {
 	render() {
 		return (
 			<div className="login">
@@ -24,5 +24,3 @@ class Login extends Component {
 		);
 	}
 }
-
-export default Login;

@@ -4,7 +4,7 @@ import Input from '../components/Input';
 import Button from '../components/Button';
 import { Link } from 'react-router-dom';
 
-class RegisterForm extends Component {
+export default class RegisterForm extends Component {
 	render() {
 		const {
 			email,
@@ -48,5 +48,3 @@ class RegisterForm extends Component {
 		);
 	}
 }
-
-export default RegisterForm;

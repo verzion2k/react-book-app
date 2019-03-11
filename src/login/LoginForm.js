@@ -4,7 +4,7 @@ import Input from '../components/Input';
 import Button from '../components/Button';
 import { Link } from 'react-router-dom';
 
-class LoginForm extends Component {
+export default class LoginForm extends Component {
 	render() {
 		const {
 			email,
@@ -31,7 +31,6 @@ class LoginForm extends Component {
 
 				<p className="login__form__footer__text">
 					New here?
-					{/* <button className="login__form__footer__button">Login</button> */}
 					<Link to="/login" className="login__form__footer__button">
 						Create an account
 					</Link>
@@ -40,5 +39,3 @@ class LoginForm extends Component {
 		);
 	}
 }
-
-export default LoginForm;

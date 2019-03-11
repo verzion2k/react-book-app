@@ -4,7 +4,7 @@ import Portal from '../components/Portal';
 import '../components/sass/Portal.scss';
 import './sass/RegisterPortal.scss';
 
-class RegisterHeader extends Component {
+export default class RegisterHeader extends Component {
 	render() {
 		const { registerPortalXs, registerPortalS, registerPortalLg } = this.props;
 		return (
@@ -22,5 +22,3 @@ class RegisterHeader extends Component {
 		);
 	}
 }
-
-export default RegisterHeader;
