@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import ReactDOM from 'react-dom';
+import './sass/Portal.scss';
 
 const portalRoot = document.getElementById('portal');
 
