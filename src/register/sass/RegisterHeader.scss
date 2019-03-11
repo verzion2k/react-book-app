@@ -1,7 +1,7 @@
-@import './CreateAccountCircle.scss';
+@import './RegisterPortal.scss';
 
-.new__account__header {
-	padding-top: 236px;
+.register__header {
+	padding-top: 238px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -9,14 +9,14 @@
 	text-align: center;
 }
 
-.new__account__header--title {
+.register__header__title {
 	line-height: normal;
 	font-size: 32px;
 	color: #384f7d;
 	margin: 0;
 }
 
-.new__account__header--desc {
+.register__header__desc {
 	line-height: 22px;
 	font-size: 14px;
 	padding: 12px 5px 32px 5px;

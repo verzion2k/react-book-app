@@ -1,4 +1,17 @@
-.new__account__circle--s {
+.register__circle--xs {
+	z-index: 1;
+	position: absolute;
+	left: 78.13%;
+	right: 7.03%;
+	top: 43.62%;
+	bottom: 49.53%;
+	width: 55.65px;
+	height: 55.65px;
+	background: linear-gradient(228.76deg, #2deef9 -34.42%, #e084f1 127.18%);
+	border-radius: 100%;
+}
+
+.register__circle--s {
 	z-index: 3;
 	position: absolute;
 	left: 33.33%;
@@ -14,11 +27,11 @@
 	border-radius: 100%;
 }
 
-.new__account__circle--s::after {
+.register__circle--s::after {
 	content: url(../icons/lamp.svg);
 }
 
-.new__account__circle--lg {
+.register__circle--lg {
 	z-index: 2;
 	position: absolute;
 	left: -57px;
@@ -31,18 +44,5 @@
 		rgba(121, 171, 252, 0.61) 93.61%,
 		rgba(96, 108, 255, 0.61) 147.83%
 	);
-	border-radius: 100%;
-}
-
-.new__account__circle--xs {
-	z-index: 1;
-	position: absolute;
-	left: 78.13%;
-	right: 7.03%;
-	top: 43.62%;
-	bottom: 49.53%;
-	width: 55.65px;
-	height: 55.65px;
-	background: linear-gradient(228.76deg, #2deef9 -34.42%, #e084f1 127.18%);
 	border-radius: 100%;
 }

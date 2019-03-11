@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import CreateAccountContainer from './create_account/CreateAccountContainer';
+import Main from './main/Main';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<CreateAccountContainer />, document.getElementById('root'));
+ReactDOM.render(<Main />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

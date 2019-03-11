@@ -1,4 +1,4 @@
-.new__account__form {
+.register__form {
 	display: flex;
 	justify-content: center;
 	flex-flow: row wrap;
@@ -9,7 +9,7 @@
 	}
 }
 
-.new__account__form__footer--text {
+.register__form__footer__text {
 	line-height: normal;
 	font-size: 16px;
 	text-align: center;
@@ -17,41 +17,43 @@
 	margin: 20px 0 51px;
 }
 
-.new__account__form__footer--login {
-	border: none;
+.register__form__footer__button {
 	line-height: normal;
 	font-size: 16px;
 	font-weight: 700;
 	border-bottom: 1px solid #445984;
-	text-align: center;
 	color: #445984;
-	padding: 0;
 	padding-bottom: 2px;
 	margin-left: 5px;
-	cursor: pointer;
-	background: none;
+	text-decoration: none;
 }
 
-.new__account__form--inputs {
+.register__form__footer__button:focus,
+.register__form__footer__button:active {
+	color: #00d23a;
+	border-bottom: 1px solid #00d23a;
+}
+
+.register__form__input__wrapper {
 	margin-bottom: 58px;
 	z-index: 2;
 }
 
-.new__account__input--icon {
+.register__input__group {
 	position: relative;
 	width: 100%;
 	margin-bottom: 20px;
 }
 
-.new__account__input--icon:last-child {
+.register__input__group:last-child {
 	margin-bottom: 0;
 }
 
-.new__account__input--icon::after {
+.register__input__group::after {
 	content: "";
 	position: absolute;
 	right: 5%;
-	top: 40%;
+	top: 50%;
 	bottom: 0;
 	width: 23px;
 	height: 12px;

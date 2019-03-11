@@ -1,9 +1,9 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import ReactDOM from 'react-dom';
 
 const portalRoot = document.getElementById('portal');
 
-class CirclePortal extends Component {
+export default class RegisterPortal extends Component {
 	constructor() {
 		super();
 		this.el = document.createElement('div');
@@ -22,5 +22,3 @@ class CirclePortal extends Component {
 		return ReactDOM.createPortal(children, this.el);
 	}
 }
-
-export default CirclePortal;

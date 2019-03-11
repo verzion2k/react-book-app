@@ -1,4 +1,4 @@
-.new__account__signup--button {
+.register__form__button {
 	padding: 20px 123.5935px;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 700;
@@ -12,4 +12,12 @@
 	border: 0;
 	color: #fff;
 	box-shadow: 0px 10px 15px #ddebdc;
+	transition: 1s all ease;
+}
+
+.register__form__button:focus,
+.register__form__button:active {
+	background: linear-gradient(166.04deg, #67fbed -5.37%, #ff00e0 196.64%);
+	outline: 0;
+	transition: 1s all ease;
 }
