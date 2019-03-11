@@ -1,4 +1,7 @@
+@import './CreateAccountCircle.scss';
+
 .new__account__header {
+	padding-top: 236px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -16,7 +19,7 @@
 .new__account__header--desc {
 	line-height: 22px;
 	font-size: 14px;
-	padding: 12px 20px 32px 20px;
+	padding: 12px 5px 32px 5px;
 	margin: 0;
 	font-weight: 400;
 	color: rgba(56, 79, 125, 0.8);

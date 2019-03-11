@@ -1,21 +1,25 @@
-.new__account__circle {
-	position: relative;
-	z-index: 1;
+.new__account__circle--s {
+	z-index: 3;
+	position: absolute;
+	left: 33.33%;
+	right: 30.4%;
+	top: 8.25%;
+	bottom: 75%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	width: 136px;
 	height: 136px;
-	margin: 67px auto 25px;
 	background: linear-gradient(147.47deg, #feb665 24.48%, #f66eb4 118.65%);
 	border-radius: 100%;
 }
 
-.new__account__circle::after {
+.new__account__circle--s::after {
 	content: url(../icons/lamp.svg);
 }
 
-.new__account__circle__absolute--big {
+.new__account__circle--lg {
+	z-index: 2;
 	position: absolute;
 	left: -57px;
 	top: -139px;
@@ -30,7 +34,8 @@
 	border-radius: 100%;
 }
 
-.new__account__circle__absolute--small {
+.new__account__circle--xs {
+	z-index: 1;
 	position: absolute;
 	left: 78.13%;
 	right: 7.03%;
