@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import './sass/RegisterForm.scss';
+import './sass/LoginForm.scss';
 import Input from '../components/Input';
 import Button from '../components/Button';
 import { Link } from 'react-router-dom';
 
-class RegisterForm extends Component {
+class LoginForm extends Component {
 	render() {
 		const {
 			email,
@@ -15,11 +15,12 @@ class RegisterForm extends Component {
 			passwordAgainPlaceholder,
 			emailClassName,
 			passwordClassName,
-			passwordAgainClassName
+			passwordAgainClassName,
+			buttonClassName
 		} = this.props;
 		return (
-			<div className="register__form">
-				<div className="register__form__input__wrapper">
+			<div className="login__form">
+				<div className="login__form__input__wrapper">
 					<Input type={email} title={email} placeholder={emailPlaceholder} className={emailClassName} />
 					<Input
 						type={password}
@@ -27,21 +28,15 @@ class RegisterForm extends Component {
 						placeholder={passwordPlaceholder}
 						className={passwordClassName}
 					/>
-					<Input
-						type={password}
-						title={passwordAgain}
-						placeholder={passwordAgainPlaceholder}
-						className={passwordAgainClassName}
-					/>
 				</div>
 
-				<Button />
+				<Button className={buttonClassName} />
 
-				<p className="register__form__footer__text">
-					Already have an account?
-					{/* <button className="register__form__footer__button">Login</button> */}
-					<Link to="/login" className="register__form__footer__button">
-						Login
+				<p className="login__form__footer__text">
+					New here?
+					{/* <button className="login__form__footer__button">Login</button> */}
+					<Link to="/login" className="login__form__footer__button">
+						Create an account
 					</Link>
 				</p>
 			</div>
@@ -49,4 +44,4 @@ class RegisterForm extends Component {
 	}
 }
 
-export default RegisterForm;
+export default LoginForm;

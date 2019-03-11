@@ -1,15 +1,10 @@
-.register__form {
+.login__form {
 	display: flex;
 	justify-content: center;
 	flex-flow: row wrap;
-	&--inputs {
-		display: flex;
-		justify-content: center;
-		flex-flow: row wrap;
-	}
 }
 
-.register__form__footer__text {
+.login__form__footer__text {
 	line-height: normal;
 	font-size: 16px;
 	text-align: center;
@@ -17,7 +12,7 @@
 	margin: 20px 0 51px;
 }
 
-.register__form__footer__button {
+.login__form__footer__button {
 	line-height: normal;
 	font-size: 16px;
 	font-weight: 700;
@@ -28,14 +23,14 @@
 	text-decoration: none;
 }
 
-.register__form__footer__button:focus,
-.register__form__footer__button:active {
+.login__form__footer__button:focus,
+.login__form__footer__button:active {
 	color: #00d23a;
 	border-bottom: 1px solid #00d23a;
 }
 
-.register__form__input__wrapper {
-	margin-bottom: 58px;
+.login__form__input__wrapper {
+	margin-bottom: 148px;
 	z-index: 2;
 	width: 100%;
 }

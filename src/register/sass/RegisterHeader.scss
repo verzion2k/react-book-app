@@ -24,3 +24,14 @@
 	font-weight: 400;
 	color: rgba(56, 79, 125, 0.8);
 }
+
+.input__group::after {
+	content: "";
+	position: absolute;
+	right: 5%;
+	top: 50%;
+	bottom: 0;
+	width: 23px;
+	height: 12px;
+	background: url(../icons/eye.svg) center / contain no-repeat;
+}

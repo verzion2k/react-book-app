@@ -1,0 +1,41 @@
+.login__circle--xs {
+	z-index: 1;
+	position: absolute;
+	left: 62.13%;
+	right: 23.03%;
+	top: 43.62%;
+	bottom: 49.53%;
+	width: 55.65px;
+	height: 55.65px;
+	background: linear-gradient(228.76deg, #2deef9 -34.42%, #e084f1 127.18%);
+	border-radius: 100%;
+}
+
+.login__circle--s {
+	z-index: 1;
+	position: absolute;
+	left: 72.8%;
+	right: -9.07%;
+	top: 13.79%;
+	bottom: 69.46%;
+	width: 136px;
+	height: 136px;
+	background: linear-gradient(147.47deg, #feb665 24.48%, #f66eb4 118.65%);
+	border-radius: 100%;
+}
+
+.login__circle--lg {
+	z-index: 2;
+	position: absolute;
+	left: -57px;
+	top: -139px;
+	width: 299px;
+	height: 299px;
+	background: linear-gradient(
+		315deg,
+		rgba(255, 255, 255, 0.61) 3.5%,
+		rgba(121, 171, 252, 0.61) 93.61%,
+		rgba(96, 108, 255, 0.61) 147.83%
+	);
+	border-radius: 100%;
+}

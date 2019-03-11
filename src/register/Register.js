@@ -7,7 +7,11 @@ class Register extends Component {
 	render() {
 		return (
 			<div className="register">
-				<RegisterHeader />
+				<RegisterHeader
+					registerPortalXs="register__circle--xs"
+					registerPortalS="register__circle--s"
+					registerPortalLg="register__circle--lg"
+				/>
 				<RegisterForm
 					email="email"
 					password="password"
@@ -15,9 +19,9 @@ class Register extends Component {
 					emailPlaceholder="ducawizard@gmail.com"
 					passwordPlaceholder="••••••••"
 					passwordAgainPlaceholder="•••••"
-					emailClassName="register__input__email"
-					passwordClassName="register__input__password"
-					passwordAgainClassName="register__input__password-again"
+					emailClassName="input__email"
+					passwordClassName="input__password"
+					passwordAgainClassName="input__password-again"
 				/>
 			</div>
 		);

@@ -1,7 +1,7 @@
 $input-bottom-border: linear-gradient(179.24deg, #bafb67 -5.37%, #00d23a 196.64%);
 $last-input-bottom-border: linear-gradient(357.82deg, #445984 -14.04%, rgba(68, 89, 132, 0.4) 62.94%);
 
-.register__input {
+.input {
 	font-size: 14px;
 	font-family: 'Roboto', sans-serif;
 	color: rgba(56, 79, 125, 0.65);
@@ -20,30 +20,30 @@ $last-input-bottom-border: linear-gradient(357.82deg, #445984 -14.04%, rgba(68, 
 	box-sizing: border-box !important;
 }
 
-.register__input::placeholder {
+.input::placeholder {
 	color: rgba(56, 79, 125, 0.65);
 }
 
-.register__input:focus {
+.input:focus {
 	outline: 0;
 }
 
-.register__input__password {
+.input__password {
 	color: rgba(56, 79, 125, 0.65);
 	font-size: 28px;
 }
 
-.register__input__password-again::placeholder {
+.input__password-again::placeholder {
 	color: #384f7d;
 }
 
-.register__input__password-again {
+.input__password-again {
 	color: #384f7d;
 	font-size: 28px;
 	background-image: $last-input-bottom-border;
 }
 
-.register__input__title {
+.input__title {
 	display: block;
 	line-height: normal;
 	font-size: 12px;
@@ -53,4 +53,14 @@ $last-input-bottom-border: linear-gradient(357.82deg, #445984 -14.04%, rgba(68, 
 	font-family: 'Roboto', sans-serif;
 	color: rgba(68, 89, 132, 0.3);
 	padding-bottom: 6px;
+}
+
+.input__group {
+	position: relative;
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+.input__group:last-child {
+	margin-bottom: 0;
 }

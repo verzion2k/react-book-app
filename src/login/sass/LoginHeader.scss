@@ -1,0 +1,17 @@
+.login__header {
+	padding-top: 236px;
+	display: flex;
+	align-items: center;
+	flex-flow: column wrap;
+}
+
+.login__header__title {
+	display: flex;
+	justify-content: flex-start;
+	width: 100%;
+	line-height: normal;
+	font-size: 32px;
+	color: #384f7d;
+	margin: 0;
+	padding-bottom: 88px;
+}
