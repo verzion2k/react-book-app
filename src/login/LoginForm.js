@@ -9,13 +9,10 @@ class LoginForm extends Component {
 		const {
 			email,
 			password,
-			passwordAgain,
 			emailPlaceholder,
 			passwordPlaceholder,
-			passwordAgainPlaceholder,
 			emailClassName,
 			passwordClassName,
-			passwordAgainClassName,
 			buttonClassName
 		} = this.props;
 		return (
