@@ -1,4 +1,11 @@
+.book__wrapper {
+	display: flex;
+	justify-content: center;
+}
+
 .book__group {
+	overflow-y: scroll;
+	height: calc(535px - 56px);
 	padding: 0 30px;
 	position: relative;
 	&__title {
@@ -14,7 +21,7 @@
 }
 
 .book__button {
-	position: absolute;
+	position: fixed;
 	z-index: 1;
-	bottom: -1.2%;
+	bottom: 13%;
 }
