@@ -39,7 +39,6 @@ export default class RegisterForm extends Component {
 
 				<p className="register__form__footer__text">
 					Already have an account?
-					{/* <button className="register__form__footer__button">Login</button> */}
 					<Link to="/login" className="register__form__footer__button">
 						Login
 					</Link>

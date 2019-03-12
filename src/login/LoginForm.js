@@ -31,7 +31,7 @@ export default class LoginForm extends Component {
 
 				<p className="login__form__footer__text">
 					New here?
-					<Link to="/login" className="login__form__footer__button">
+					<Link to="/books" className="login__form__footer__button">
 						Create an account
 					</Link>
 				</p>

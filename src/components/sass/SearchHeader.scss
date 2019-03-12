@@ -1,0 +1,35 @@
+.search__header {
+	z-index: 2;
+	position: relative;
+	&__title h2 {
+		font-family: 'Roboto', sans-serif;
+		line-height: normal;
+		font-size: 19px;
+		text-align: center;
+		margin: 0;
+		margin-bottom: 27px;
+		color: #ffffff;
+	}
+}
+
+.search__status {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 12px 0 37px;
+	&__time {
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: 500;
+		line-height: normal;
+		font-size: 12px;
+		text-align: center;
+		color: #ffffff;
+	}
+	&__time p {
+		margin: 0;
+	}
+	&__icons img {
+		padding: 0 2px;
+	}
+}
