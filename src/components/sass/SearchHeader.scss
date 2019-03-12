@@ -1,6 +1,7 @@
 .search__header {
 	z-index: 2;
 	position: relative;
+	padding: 0 30px;
 	&__title h2 {
 		font-family: 'Roboto', sans-serif;
 		line-height: normal;
@@ -17,6 +18,9 @@
 	justify-content: space-between;
 	align-items: center;
 	margin: 12px 0 37px;
+	z-index: 2;
+	position: relative;
+	padding: 0 20px;
 	&__time {
 		font-family: Roboto;
 		font-style: normal;

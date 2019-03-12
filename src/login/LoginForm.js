@@ -12,8 +12,7 @@ export default class LoginForm extends Component {
 			emailPlaceholder,
 			passwordPlaceholder,
 			emailClassName,
-			passwordClassName,
-			buttonClassName
+			passwordClassName
 		} = this.props;
 		return (
 			<div className="login__form">
@@ -27,7 +26,7 @@ export default class LoginForm extends Component {
 					/>
 				</div>
 
-				<Button className={buttonClassName} />
+				<Button buttonName="Sign up" />
 
 				<p className="login__form__footer__text">
 					New here?

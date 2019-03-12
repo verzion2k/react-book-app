@@ -9,10 +9,7 @@ import SearchBar from './SearchBar';
 export default class SearchHeader extends Component {
 	render() {
 		return (
-			<div className="search__header">
-				<Portal>
-					<div className="circle__header" />
-				</Portal>
+			<div>
 				<div className="search__status">
 					<div className="search__status__time">
 						<p>5:40 PM</p>
@@ -23,10 +20,16 @@ export default class SearchHeader extends Component {
 						<img src={battery} alt="battery" />
 					</div>
 				</div>
-				<div className="search__header__title">
-					<h2>My Book List</h2>
+
+				<div className="search__header">
+					<Portal>
+						<div className="circle__header" />
+					</Portal>
+					<div className="search__header__title">
+						<h2>My Book List</h2>
+					</div>
+					<SearchBar />
 				</div>
-				<SearchBar />
 			</div>
 		);
 	}

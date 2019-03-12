@@ -3,6 +3,7 @@ import './sass/Button.scss';
 
 export default class Button extends Component {
 	render() {
-		return <button className="button">Sign Up</button>;
+		const { buttonName, buttonClassName } = this.props;
+		return <button className={`button ${buttonClassName}`}>{buttonName}</button>;
 	}
 }

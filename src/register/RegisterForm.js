@@ -35,7 +35,7 @@ export default class RegisterForm extends Component {
 					/>
 				</div>
 
-				<Button />
+				<Button buttonName="Sign up" />
 
 				<p className="register__form__footer__text">
 					Already have an account?

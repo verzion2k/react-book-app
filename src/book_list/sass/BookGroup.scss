@@ -1,0 +1,19 @@
+.book__group {
+	padding: 0 30px;
+	position: relative;
+	&__title {
+		font-family: 'Roboto', sans-serif;
+		line-height: normal;
+		font-size: 12px;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		margin-top: 30px;
+		margin-bottom: 19px;
+		color: rgba(56, 79, 125, 0.8);
+	}
+}
+
+.book__button {
+	position: absolute;
+	bottom: -1%;
+}

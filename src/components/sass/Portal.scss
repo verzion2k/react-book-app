@@ -42,3 +42,13 @@
 	background: linear-gradient(210.28deg, #feb665 37.28%, #f66eb4 76.65%);
 	border-radius: 100%;
 }
+
+.overlay {
+	position: absolute;
+	width: 375px;
+	height: 267px;
+	left: 0px;
+	top: 545px;
+
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0) 7.06%, #ffffff 100%);
+}
