@@ -13,9 +13,14 @@ export default class BookGroup extends Component {
 			<div className="book__group">
 				<h2 className="book__group__title">Books Reviewed By You</h2>
 
-				<BookItem img={remoteBook} title="Remote: Office Not Required" author="Jason Fried" />
-				<BookItem img={papillon} title="Papillon" author="Henri Charriere" />
-				<BookItem img={darkTower} title="The Dark Tower: The Gunslinger" author="Stephen King" />
+				<BookItem img={remoteBook} title="Remote: Office Not Required" author="Jason Fried" route="remote" />
+				<BookItem img={papillon} title="Papillon" author="Henri Charriere" route="papillon" />
+				<BookItem
+					img={darkTower}
+					title="The Dark Tower: The Gunslinger"
+					author="Stephen King"
+					route="the-dark-tower"
+				/>
 
 				<Button buttonName="Add book review" buttonClassName="book__button" />
 

@@ -1,14 +1,17 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './sass/BookItem.scss';
 import stars from './icons/stars.svg';
 
 export default class BookItem extends Component {
 	render() {
-		const { title, author, img } = this.props;
+		const { title, author, img, route } = this.props;
 		return (
 			<div className="book__item">
 				<div className="book__image">
-					<img src={img} alt="book" />
+					<Link to={`/review/${route}`}>
+						<img src={img} alt="book" />
+					</Link>
 				</div>
 
 				<div className="book__description">

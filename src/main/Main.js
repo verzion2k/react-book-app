@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Register from '../register/Register';
 import Login from '../login/Login';
 import BookList from '../book_list/BookList';
+import BookReview from '../book_review/BookReview';
 
 export default class Main extends Component {
 	render() {
@@ -10,8 +11,9 @@ export default class Main extends Component {
 			<BrowserRouter>
 				<Switch>
 					<Route exact path="/" component={Register} />
-					<Route path="/login" component={Login} />
-					<Route path="/books" component={BookList} />
+					<Route exact path="/login" component={Login} />
+					<Route exact path="/books" component={BookList} />
+					<Route path="/review/:book" component={BookReview} />
 				</Switch>
 			</BrowserRouter>
 		);
