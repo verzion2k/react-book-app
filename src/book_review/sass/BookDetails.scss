@@ -1,0 +1,52 @@
+.book__details {
+	display: flex;
+	padding: 0 30px;
+	position: relative;
+	z-index: 2;
+	justify-content: space-between;
+	&__card-right {
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: center;
+		width: 100%;
+	}
+	&__image {
+		background: #ffffff;
+		box-shadow: 4px 12px 25px rgba(71, 55, 255, 0.08);
+		border-radius: 8px;
+	}
+	&__title {
+		width: 100%;
+		font-family: 'Roboto', sans-serif;
+		line-height: normal;
+		font-size: 20px;
+		margin: 0;
+		color: #384f7d;
+	}
+	&__author {
+		width: 100%;
+		font-family: 'Roboto', sans-serif;
+		line-height: normal;
+		font-size: 16px;
+		margin: 0;
+		color: rgba(56, 79, 125, 0.8);
+	}
+	&__feedback {
+		width: 100%;
+	}
+	&__rate {
+		font-family: 'Roboto', sans-serif;
+		line-height: normal;
+		font-size: 12px;
+		margin: 0;
+		color: #384f7d;
+	}
+	&__reviews {
+		width: 100%;
+		font-family: 'Roboto', sans-serif;
+		line-height: normal;
+		font-size: 10px;
+		margin: 0;
+		color: rgba(56, 79, 125, 0.8);
+	}
+}
