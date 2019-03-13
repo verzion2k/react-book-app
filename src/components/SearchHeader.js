@@ -4,10 +4,10 @@ import battery from './icons/battery.svg';
 import wifi from './icons/wifi.svg';
 import './sass/SearchHeader.scss';
 import Portal from './Portal';
-import SearchBar from './SearchBar';
 
 export default class SearchHeader extends Component {
 	render() {
+		const { title, searchArrowIcon } = this.props;
 		return (
 			<div>
 				<div className="search__status">
@@ -21,14 +21,13 @@ export default class SearchHeader extends Component {
 					</div>
 				</div>
 
-				<div className="search__header">
+				<div className={`search__header ${searchArrowIcon}`}>
 					<Portal>
 						<div className="circle__header" />
 					</Portal>
 					<div className="search__header__title">
-						<h2>My Book List</h2>
+						<h2>{title}</h2>
 					</div>
-					<SearchBar />
 				</div>
 			</div>
 		);

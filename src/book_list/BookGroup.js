@@ -3,43 +3,20 @@ import './sass/BookGroup.scss';
 import BookItem from './BookItem';
 import Portal from '../components/Portal';
 import Button from '../components/Button';
-import remoteBook from './icons/remote-book.svg';
-import darkTower from './icons/dark-tower-book.svg';
-import papillon from './icons/papillon-book.svg';
+import BookContext from '../main/BookContext';
 
-export default class BookGroup extends Component {
+class BookGroup extends Component {
 	render() {
+		const book = this.context;
+		const bookList = Object.keys(book).map((index) => {
+			return <BookItem key={index} route={index} {...book[index]} />;
+		});
+
 		return (
 			<div className="book__wrapper">
 				<div className="book__group">
 					<h2 className="book__group__title">Books Reviewed By You</h2>
-
-					<BookItem
-						img={remoteBook}
-						title="Remote: Office Not Required"
-						author="Jason Fried"
-						route="remote"
-					/>
-					<BookItem img={papillon} title="Papillon" author="Henri Charriere" route="papillon" />
-					<BookItem
-						img={darkTower}
-						title="The Dark Tower: The Gunslinger"
-						author="Stephen King"
-						route="the-dark-tower"
-					/>
-					<BookItem
-						img={remoteBook}
-						title="Remote: Office Not Required"
-						author="Jason Fried"
-						route="remote"
-					/>
-					<BookItem img={papillon} title="Papillon" author="Henri Charriere" route="papillon" />
-					<BookItem
-						img={darkTower}
-						title="The Dark Tower: The Gunslinger"
-						author="Stephen King"
-						route="the-dark-tower"
-					/>
+					{bookList}
 				</div>
 				<Button buttonName="Add book review" buttonClassName="book__button" />
 
@@ -50,3 +27,7 @@ export default class BookGroup extends Component {
 		);
 	}
 }
+
+BookGroup.contextType = BookContext;
+
+export default BookGroup;

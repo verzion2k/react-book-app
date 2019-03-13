@@ -13,6 +13,13 @@
 	}
 }
 
+.search__header--arrow {
+	&:before {
+		content: url(../icons/arrow-left.svg);
+		position: absolute;
+	}
+}
+
 .search__status {
 	display: flex;
 	justify-content: space-between;
