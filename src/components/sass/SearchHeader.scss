@@ -11,12 +11,12 @@
 		margin-bottom: 27px;
 		color: #ffffff;
 	}
-}
-
-.search__header--arrow {
-	&:before {
-		content: url(../icons/arrow-left.svg);
+	&__arrow {
 		position: absolute;
+		cursor: pointer;
+	}
+	&__arrow--none {
+		display: none;
 	}
 }
 

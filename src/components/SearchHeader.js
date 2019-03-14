@@ -2,12 +2,16 @@ import React, { Component } from 'react';
 import signal from './icons/mobile_signal.svg';
 import battery from './icons/battery.svg';
 import wifi from './icons/wifi.svg';
+import arrow from './icons/arrow-left.svg';
 import './sass/SearchHeader.scss';
 import Portal from './Portal';
+import { Link } from 'react-router-dom';
 
 export default class SearchHeader extends Component {
+	goBack = () => {};
+
 	render() {
-		const { title, searchArrowIcon } = this.props;
+		const { title, showArrowIcon } = this.props;
 		return (
 			<div>
 				<div className="search__status">
@@ -21,7 +25,15 @@ export default class SearchHeader extends Component {
 					</div>
 				</div>
 
-				<div className={`search__header ${searchArrowIcon}`}>
+				<div className="search__header">
+					<Link to="/books">
+						<img
+							src={arrow}
+							className={showArrowIcon ? 'search__header__arrow' : 'search__header__arrow--none'}
+							alt="arrow"
+						/>
+					</Link>
+
 					<Portal>
 						<div className="circle__header" />
 					</Portal>

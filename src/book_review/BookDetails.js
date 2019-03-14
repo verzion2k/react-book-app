@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './sass/BookDetails.scss';
-import book from './img/book.svg';
 import star from './icon/single-star.svg';
 import stars from './icon/stars.svg';
 import Button from '../components/Button';
@@ -9,7 +8,7 @@ import Menu from '../components/Menu';
 export default class BookDetails extends Component {
 	render() {
 		const { image, title, author, rating, reviews, description } = this.props.bookData;
-		console.log(this.props.bookData.author);
+
 		return (
 			<div className="book__details">
 				<div className="book__details__card">
