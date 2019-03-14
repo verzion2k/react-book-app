@@ -8,29 +8,27 @@ import Menu from '../components/Menu';
 
 export default class BookDetails extends Component {
 	render() {
+		const { image, title, author, rating, reviews, description } = this.props.bookData;
+		console.log(this.props.bookData.author);
 		return (
 			<div className="book__details">
 				<div className="book__details__card">
 					<div className="book__details__card-left">
-						<img src={book} alt="book" className="book__details__image" />
+						<img src={image} alt="book" className="book__details__image" />
 					</div>
 					<div className="book__details__card-right">
-						<h2 className="book__details__title">Pet Semetary</h2>
-						<h3 className="book__details__author">Stephen King</h3>
+						<h2 className="book__details__title">{title}</h2>
+						<h3 className="book__details__author">{author}</h3>
 						<div className="book__details__feedback">
 							<img src={star} alt="review" className="book__details__star" />
-							<p className="book__details__rate">4.68</p>
+							<p className="book__details__rate">{rating}</p>
 						</div>
 
-						<h4 className="book__details__reviews">2.464 reviews</h4>
+						<h4 className="book__details__reviews">{reviews} reviews</h4>
 					</div>
 				</div>
 				<div className="book__details__desc">
-					<p className="book__details__desc__text">
-						Sometimes dead is better....When the Creeds move into a beautiful old house in rural Maine, it
-						all seems too good to be true: physician father, beautiful wife, charming little daughter,
-						adorable infant son -- and now an idyllic home....
-					</p>
+					<p className="book__details__desc__text">{description}</p>
 					<h3 className="book__details__desc__more">Full Synopsis</h3>
 				</div>
 				<div className="book__details__rating">

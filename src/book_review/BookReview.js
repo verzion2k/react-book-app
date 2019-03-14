@@ -8,7 +8,7 @@ export default class BookReview extends Component {
 		return (
 			<div className="book__review">
 				<SearchHeader title="Add Book Review" searchArrowIcon="search__header--arrow" />
-				<BookDetails />
+				<BookDetails bookData={this.props.location.state.bookProps} />
 			</div>
 		);
 	}
