@@ -7,8 +7,9 @@ import './sass/Menu.scss';
 
 export default class Menu extends Component {
 	render() {
+		const { menuMargin } = this.props;
 		return (
-			<div className="menu">
+			<div className={`menu ${menuMargin}`}>
 				<div className="menu__item">
 					<img src={timeline} alt="timeline" />
 				</div>

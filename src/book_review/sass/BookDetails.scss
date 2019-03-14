@@ -1,14 +1,18 @@
 .book__details {
-	display: flex;
-	padding: 0 30px;
-	position: relative;
-	z-index: 2;
-	justify-content: space-between;
+	&__card {
+		display: flex;
+		padding: 0 30px;
+		margin-bottom: 29px;
+		position: relative;
+		z-index: 2;
+		justify-content: space-between;
+	}
 	&__card-right {
 		display: flex;
 		flex-flow: column wrap;
 		justify-content: center;
 		width: 100%;
+		padding-left: 20px;
 	}
 	&__image {
 		background: #ffffff;
@@ -32,7 +36,13 @@
 		color: rgba(56, 79, 125, 0.8);
 	}
 	&__feedback {
+		margin-top: 15px;
+		margin-bottom: 1px;
 		width: 100%;
+		display: inline-flex;
+	}
+	&__star {
+		margin-right: 3px;
 	}
 	&__rate {
 		font-family: 'Roboto', sans-serif;
@@ -48,5 +58,42 @@
 		font-size: 10px;
 		margin: 0;
 		color: rgba(56, 79, 125, 0.8);
+	}
+	&__desc {
+		padding: 0 30px;
+		margin-bottom: 75px;
+	}
+	&__desc__text {
+		font-family: 'Roboto', sans-serif;
+		line-height: 22px;
+		font-size: 14px;
+		margin: 0;
+		color: rgba(56, 79, 125, 0.8);
+	}
+	&__desc__more {
+		font-family: 'Roboto', sans-serif;
+		line-height: 22px;
+		font-size: 14px;
+		text-decoration-line: underline;
+		padding-top: 12px;
+		margin: 0;
+		color: #384f7d;
+	}
+	&__rating {
+		padding: 0 30px;
+		text-align: center;
+	}
+	&__rating__text {
+		font-family: 'Roboto', sans-serif;
+		line-height: normal;
+		font-size: 12px;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		margin: 0;
+		color: rgba(56, 79, 125, 0.8);
+	}
+	&__rating__img {
+		margin-top: 9px;
+		margin-bottom: 42.5px;
 	}
 }

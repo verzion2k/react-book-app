@@ -12,7 +12,7 @@ export default class BookList extends Component {
 				<SearchHeader title="My Book List" />
 				<SearchBar />
 				<BookGroup />
-				<Menu />
+				<Menu menuMargin="margin--high" />
 			</div>
 		);
 	}

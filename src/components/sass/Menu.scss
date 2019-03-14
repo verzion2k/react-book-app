@@ -1,5 +1,4 @@
 .menu {
-	margin-top: 93px;
 	position: relative;
 	z-index: 2;
 	display: flex;
@@ -24,4 +23,12 @@
 		width: 100px;
 		height: 4px;
 	}
+}
+
+.margin--high {
+	margin-top: 93px;
+}
+
+.margin--low {
+	margin-top: 22px;
 }
