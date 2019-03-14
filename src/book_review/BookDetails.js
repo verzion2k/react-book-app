@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import './sass/BookDetails.scss';
-import star from './icon/single-star.svg';
-import stars from './icon/stars.svg';
+import star from '../main/icon/book_review/single-star.svg';
+import stars from '../main/icon/book_review/stars.svg';
 import Button from '../components/Button';
 import Menu from '../components/Menu';
 

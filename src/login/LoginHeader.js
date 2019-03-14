@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import './sass/LoginHeader.scss';
 import Portal from '../components/Portal';
 import '../components/sass/Portal.scss';
-import './sass/LoginPortal.scss';
 
 export default class LoginHeader extends Component {
 	render() {

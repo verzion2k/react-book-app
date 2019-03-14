@@ -1,0 +1,27 @@
+.book {
+	&__wrapper {
+		display: flex;
+		justify-content: center;
+	}
+	&__group {
+		overflow-y: scroll;
+		height: 535px - 56px;
+		padding: 0 30px;
+		position: relative;
+	}
+	&__group__title {
+		font-family: 'Roboto', sans-serif;
+		line-height: normal;
+		font-size: 12px;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		margin-top: 30px;
+		margin-bottom: 19px;
+		color: rgba(56, 79, 125, 0.8);
+	}
+	&__button {
+		position: fixed;
+		z-index: 1;
+		bottom: 13%;
+	}
+}

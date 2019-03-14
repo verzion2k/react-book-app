@@ -1,5 +1,5 @@
-$input-bottom-border: linear-gradient(179.24deg, #bafb67 -5.37%, #00d23a 196.64%);
-$last-input-bottom-border: linear-gradient(357.82deg, #445984 -14.04%, rgba(68, 89, 132, 0.4) 62.94%);
+$input-bottom-border-green: linear-gradient(179.24deg, #bafb67 -5.37%, #00d23a 196.64%);
+$input-bottom-border-blue: linear-gradient(357.82deg, #445984 -14.04%, rgba(68, 89, 132, 0.4) 62.94%);
 
 .input {
 	font-size: 14px;
@@ -12,55 +12,47 @@ $last-input-bottom-border: linear-gradient(357.82deg, #445984 -14.04%, rgba(68, 
 	border-radius: 8px;
 	border: 0;
 	border-bottom: 3px solid transparent;
-	background-image: $input-bottom-border;
+	background-image: $input-bottom-border-green;
 	background-size: calc(100% + 6px) 3px;
 	background-repeat: no-repeat;
 	background-origin: border-box;
 	background-position: left bottom;
 	box-sizing: border-box !important;
-}
-
-.input::placeholder {
-	color: rgba(56, 79, 125, 0.65);
-}
-
-.input:focus {
-	outline: 0;
-}
-
-.input__password {
-	color: rgba(56, 79, 125, 0.65);
-	font-size: 28px;
-}
-
-.input__password-again::placeholder {
-	color: #384f7d;
-}
-
-.input__password-again {
-	color: #384f7d;
-	font-size: 28px;
-	background-image: $last-input-bottom-border;
-}
-
-.input__title {
-	display: block;
-	line-height: normal;
-	font-size: 12px;
-	font-weight: 700;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-	font-family: 'Roboto', sans-serif;
-	color: rgba(68, 89, 132, 0.3);
-	padding-bottom: 6px;
-}
-
-.input__group {
-	position: relative;
-	width: 100%;
-	margin-bottom: 20px;
-}
-
-.input__group:last-child {
-	margin-bottom: 0;
+	&::placeholder {
+		color: rgba(56, 79, 125, 0.65);
+	}
+	&:focus {
+		outline: 0;
+	}
+	&__password {
+		color: rgba(56, 79, 125, 0.65);
+		font-size: 28px;
+	}
+	&__password-again {
+		color: #384f7d;
+		font-size: 28px;
+		background-image: $input-bottom-border-blue;
+	}
+	&__password-again::placeholder {
+		color: #384f7d;
+	}
+	&__title {
+		display: block;
+		line-height: normal;
+		font-size: 12px;
+		font-weight: 700;
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		font-family: 'Roboto', sans-serif;
+		color: rgba(68, 89, 132, 0.3);
+		padding-bottom: 6px;
+	}
+	&__group {
+		position: relative;
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	&__group::last-child {
+		margin-bottom: 0;
+	}
 }

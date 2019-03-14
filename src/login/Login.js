@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './sass/Login.scss';
 import LoginHeader from './LoginHeader';
 import LoginForm from './LoginForm';
+import './sass/base.scss';
 
 export default class Login extends Component {
 	render() {

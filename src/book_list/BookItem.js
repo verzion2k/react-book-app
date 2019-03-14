@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import './sass/BookItem.scss';
-import stars from './icons/stars.svg';
+import stars from '../main/icon/book_list/stars.svg';
 
 export default class BookItem extends Component {
 	render() {

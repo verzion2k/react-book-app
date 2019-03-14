@@ -1,0 +1,33 @@
+.register__header {
+	padding-top: 238px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column wrap;
+	text-align: center;
+	&__title {
+		line-height: normal;
+		font-size: 32px;
+		color: #384f7d;
+		margin: 0;
+	}
+	&__desc {
+		line-height: 22px;
+		font-size: 14px;
+		padding: 12px 5px 32px 5px;
+		margin: 0;
+		font-weight: 400;
+		color: rgba(56, 79, 125, 0.8);
+	}
+}
+
+.input__group::after {
+	content: "";
+	position: absolute;
+	right: 5%;
+	top: 50%;
+	bottom: 0;
+	width: 23px;
+	height: 12px;
+	background: url(../../main/icon/register/eye.svg) center / contain no-repeat;
+}

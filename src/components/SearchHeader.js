@@ -5,10 +5,12 @@ import wifi from './icons/wifi.svg';
 import arrow from './icons/arrow-left.svg';
 import './sass/SearchHeader.scss';
 import Portal from './Portal';
-import { Link } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
 
-export default class SearchHeader extends Component {
-	goBack = () => {};
+class SearchHeader extends Component {
+	goBack = () => {
+		this.props.history.goBack();
+	};
 
 	render() {
 		const { title, showArrowIcon } = this.props;
@@ -26,13 +28,12 @@ export default class SearchHeader extends Component {
 				</div>
 
 				<div className="search__header">
-					<Link to="/books">
-						<img
-							src={arrow}
-							className={showArrowIcon ? 'search__header__arrow' : 'search__header__arrow--none'}
-							alt="arrow"
-						/>
-					</Link>
+					<img
+						src={arrow}
+						className={showArrowIcon ? 'search__header__arrow' : 'search__header__arrow--none'}
+						alt="arrow"
+						onClick={this.goBack}
+					/>
 
 					<Portal>
 						<div className="circle__header" />
@@ -45,3 +46,5 @@ export default class SearchHeader extends Component {
 		);
 	}
 }
+
+export default withRouter(SearchHeader);

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import './sass/Register.scss';
 import RegisterHeader from './RegisterHeader';
 import RegisterForm from './RegisterForm';
+import './sass/base.scss';
 
 export default class Register extends Component {
 	render() {

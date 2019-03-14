@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './sass/BookGroup.scss';
 import BookItem from './BookItem';
 import Portal from '../components/Portal';
 import Button from '../components/Button';

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import SearchHeader from '../components/SearchHeader';
 import BookDetails from './BookDetails';
-import './sass/BookReview.scss';
+import './sass/base.scss';
 
 export default class BookReview extends Component {
 	render() {

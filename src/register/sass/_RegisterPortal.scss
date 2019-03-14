@@ -1,0 +1,24 @@
+.register__circle {
+	&--xs {
+		left: 78.13%;
+		right: 7.03%;
+		top: 43.62%;
+		bottom: 49.53%;
+	}
+	&--s {
+		left: 33.33%;
+		right: 30.4%;
+		top: 8.25%;
+		bottom: 75%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&--s::after {
+		content: url(../../main/icon/register/lamp.svg);
+	}
+	&--lg {
+		left: -57px;
+		top: -139px;
+	}
+}

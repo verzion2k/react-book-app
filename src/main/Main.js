@@ -5,6 +5,7 @@ import Login from '../login/Login';
 import BookList from '../book_list/BookList';
 import BookReview from '../book_review/BookReview';
 import BookContext from './BookContext';
+import './sass/Main.scss';
 import faker from 'faker';
 
 export default class Main extends Component {

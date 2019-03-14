@@ -1,8 +1,5 @@
 import React, { Component } from 'react';
-import './sass/RegisterHeader.scss';
 import Portal from '../components/Portal';
-import '../components/sass/Portal.scss';
-import './sass/RegisterPortal.scss';
 
 export default class RegisterHeader extends Component {
 	render() {
