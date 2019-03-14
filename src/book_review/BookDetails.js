@@ -6,7 +6,7 @@ import Menu from '../components/Menu';
 
 export default class BookDetails extends Component {
 	render() {
-		const { image, title, author, rating, reviews, description } = this.props.bookData;
+		const { image, title, author, rating, reviews, description } = this.props;
 
 		return (
 			<div className="book__details">
